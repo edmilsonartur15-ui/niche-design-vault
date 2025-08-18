@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CreativeStudio - Agência de Design Criativo</title>
-    <meta name="description" content="Somos uma agência de design criativo especializada em branding, design digital e experiências únicas que transformam marcas.">
+    <title>EliteEstate - Luxury Real Estate | Premium Properties Worldwide</title>
+    <meta name="description" content="Discover luxury real estate with EliteEstate. Premium properties, exclusive listings, and unparalleled service in the world's most prestigious locations.">
+    <meta name="author" content="Lovable">
+    
+    <meta property="og:title" content="EliteEstate - Luxury Real Estate">
+    <meta property="og:description" content="Discover luxury real estate with EliteEstate. Premium properties, exclusive listings, and unparalleled service in the world's most prestigious locations.">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
             <div class="nav-brand">
-                <i class="fas fa-palette"></i>
-                CreativeStudio
+                <span class="nav-logo">EliteEstate</span>
             </div>
+            
             <div class="nav-desktop">
-                <a href="#home" class="nav-link">Início</a>
-                <a href="#about" class="nav-link">Sobre</a>
-                <a href="#services" class="nav-link">Serviços</a>
-                <a href="#portfolio" class="nav-link">Portfolio</a>
-                <a href="#contact" class="nav-link">Contato</a>
+                <a href="#properties" class="nav-link">Properties</a>
+                <a href="#locations" class="nav-link">Locations</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
+            
             <div class="nav-contact">
-                <a href="#contact" class="btn btn-primary">Iniciar Projeto</a>
+                <div class="nav-contact-info">
+                    <span class="nav-phone">+1 (555) 123-4567</span>
+                    <span class="nav-email">hello@eliteestate.com</span>
+                </div>
+                <button class="btn btn-primary">Book Viewing</button>
             </div>
+            
             <button class="nav-mobile-toggle" id="mobileToggle">
                 <span></span>
                 <span></span>
@@ -36,117 +48,253 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="hero-background"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title">
-                Criamos <span class="gradient-text">experiências</span> que transformam marcas
-            </h1>
-            <p class="hero-subtitle">
-                Somos uma agência de design criativo que combina estratégia, criatividade e tecnologia 
-                para criar identidades visuais únicas e experiências digitais memoráveis.
-            </p>
+            <div class="hero-text">
+                <h1 class="hero-title">Discover Your Dream Estate</h1>
+                <p class="hero-subtitle">
+                    Exclusive luxury properties in the world's most prestigious locations. 
+                    Your gateway to extraordinary living awaits.
+                </p>
+            </div>
+            
+            <div class="hero-search">
+                <input type="text" placeholder="Search by location, property type, or price range..." class="search-input">
+                <button class="btn btn-primary">Search Properties</button>
+            </div>
+            
             <div class="hero-buttons">
-                <a href="#portfolio" class="btn btn-primary">
-                    <i class="fas fa-eye"></i>
-                    Ver Portfolio
-                </a>
-                <a href="#contact" class="btn btn-outline">
-                    <i class="fas fa-comments"></i>
-                    Falar Conosco
-                </a>
+                <button class="btn btn-secondary">View Collections</button>
+                <button class="btn btn-outline">Schedule Consultation</button>
+            </div>
+        </div>
+        
+        <div class="hero-stats">
+            <div class="stat-card">
+                <div class="stat-number">2,500+</div>
+                <div class="stat-label">Premium Properties</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Prime Locations</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Client Satisfaction</div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Featured Properties -->
+    <section class="featured-properties" id="properties">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Nossos Serviços</h2>
+                <h2 class="section-title">Featured Properties</h2>
                 <p class="section-description">
-                    Oferecemos soluções completas de design e estratégia digital
+                    Discover our handpicked selection of the world's most extraordinary estates
                 </p>
             </div>
+            
+            <div class="properties-grid">
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="src/assets/property-1.jpg" alt="Modern Oceanfront Villa">
+                        <div class="property-type">Villa</div>
+                        <button class="property-favorite">♡</button>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$4,750,000</div>
+                        <h3 class="property-title">Modern Oceanfront Villa</h3>
+                        <p class="property-location">Malibu, California</p>
+                        <div class="property-features">
+                            <span class="feature">5 beds</span>
+                            <span class="feature">4 baths</span>
+                            <span class="feature">3,200 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button class="btn btn-outline btn-sm">View Details</button>
+                            <button class="btn btn-primary btn-sm">Schedule Tour</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="src/assets/property-2.jpg" alt="Luxury Manhattan Penthouse">
+                        <div class="property-type">Penthouse</div>
+                        <button class="property-favorite">♡</button>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$12,500,000</div>
+                        <h3 class="property-title">Luxury Manhattan Penthouse</h3>
+                        <p class="property-location">New York City, NY</p>
+                        <div class="property-features">
+                            <span class="feature">4 beds</span>
+                            <span class="feature">3 baths</span>
+                            <span class="feature">2,800 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button class="btn btn-outline btn-sm">View Details</button>
+                            <button class="btn btn-primary btn-sm">Schedule Tour</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="src/assets/property-3.jpg" alt="Contemporary Estate">
+                        <div class="property-type">Estate</div>
+                        <button class="property-favorite">♡</button>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$8,900,000</div>
+                        <h3 class="property-title">Contemporary Estate</h3>
+                        <p class="property-location">Beverly Hills, CA</p>
+                        <div class="property-features">
+                            <span class="feature">6 beds</span>
+                            <span class="feature">5 baths</span>
+                            <span class="feature">4,500 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button class="btn btn-outline btn-sm">View Details</button>
+                            <button class="btn btn-primary btn-sm">Schedule Tour</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <button class="btn btn-secondary">View All Properties</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Premium Services</h2>
+                <p class="section-description">
+                    Comprehensive luxury real estate services tailored to your unique needs
+                </p>
+            </div>
+            
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3 class="service-title">Identidade Visual</h3>
+                    <div class="service-icon">🏠</div>
+                    <h3 class="service-title">Property Valuation</h3>
                     <p class="service-description">
-                        Criação de logotipos, manual de marca e aplicações que comunicam a essência da sua empresa.
+                        Expert market analysis and precise property valuations for informed investment decisions.
                     </p>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3 class="service-title">Design Digital</h3>
+                    <div class="service-icon">💼</div>
+                    <h3 class="service-title">Investment Advisory</h3>
                     <p class="service-description">
-                        Websites responsivos, aplicativos mobile e interfaces que proporcionam experiências excepcionais.
+                        Strategic guidance on luxury real estate investments with proven market insights.
                     </p>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-bullhorn"></i>
-                    </div>
-                    <h3 class="service-title">Marketing Visual</h3>
+                    <div class="service-icon">🔑</div>
+                    <h3 class="service-title">Property Management</h3>
                     <p class="service-description">
-                        Campanhas publicitárias, conteúdo para redes sociais e materiais promocionais que geram impacto.
+                        Full-service property management ensuring your investment maintains its premium value.
                     </p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Vamos Conversar?</h2>
-                <p class="section-description">
-                    Conte-nos sobre o seu projeto e vamos criar algo incrível juntos
-                </p>
-            </div>
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3 class="service-title">Legal Assistance</h3>
+                    <p class="service-description">
+                        Comprehensive legal support throughout the entire property transaction process.
+                    </p>
                 </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                
+                <div class="service-card">
+                    <div class="service-icon">🌍</div>
+                    <h3 class="service-title">Global Network</h3>
+                    <p class="service-description">
+                        Access to exclusive international properties through our worldwide luxury network.
+                    </p>
                 </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" placeholder="Conte-nos sobre seu projeto" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-full">
-                    <i class="fas fa-paper-plane"></i>
-                    Enviar Mensagem
-                </button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="brand-logo">
-                        <i class="fas fa-palette"></i>
-                        CreativeStudio
-                    </div>
-                    <p class="brand-description">
-                        Transformando ideias em experiências visuais únicas que conectam marcas aos seus públicos.
+                
+                <div class="service-card">
+                    <div class="service-icon">📞</div>
+                    <h3 class="service-title">24/7 Concierge</h3>
+                    <p class="service-description">
+                        Round-the-clock personalized service for all your luxury real estate needs.
                     </p>
                 </div>
             </div>
             
+            <div class="services-cta">
+                <h3>Ready to Experience Luxury?</h3>
+                <p>Schedule a consultation with our expert team today.</p>
+                <button class="btn btn-primary">Schedule Consultation</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-brand">EliteEstate</h3>
+                    <p class="footer-description">
+                        Your premier destination for luxury real estate. Connecting discerning clients 
+                        with extraordinary properties worldwide.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#properties" class="footer-link">Properties</a>
+                        <a href="#locations" class="footer-link">Locations</a>
+                        <a href="#services" class="footer-link">Services</a>
+                        <a href="#about" class="footer-link">About Us</a>
+                        <a href="#contact" class="footer-link">Contact</a>
+                        <a href="#careers" class="footer-link">Careers</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <span class="contact-label">Address:</span>
+                            <span class="contact-value">123 Luxury Ave, Beverly Hills, CA 90210</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone:</span>
+                            <span class="contact-value">+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <span class="contact-value">hello@eliteestate.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2024 CreativeStudio. Todos os direitos reservados.</p>
+                <p>&copy; 2024 EliteEstate. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy" class="legal-link">Privacy Policy</a>
+                    <a href="#terms" class="legal-link">Terms of Service</a>
+                    <a href="#cookies" class="legal-link">Cookie Policy</a>
+                </div>
             </div>
         </div>
     </footer>
